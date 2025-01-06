@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column; /* Display buttons in a column */
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+      width: 300px; 
+      border: 4px solid #5a2f66; 
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .signup-button {
+      background-color: #673783;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 5px 0; /* Add margin between buttons */
+    }
+
+    .signup-button:hover {
+      background-color: #45a049;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    background-size: cover;
+    overflow: hidden;
+    }
+
+.transparent {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(65, 36, 36);
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 90px;
+    padding-right: 200px;
+}
+  </style>
+  <script>
+    window.onload = function() {
+      document.getElementById("customer-btn").onclick = function() {
+        window.location.href = "cust_panel.html";
+      };
+
+      document.getElementById("employee-btn").onclick = function() {
+        window.location.href = "admin.html";
+      };
+    };
+  </script>
+</head>
+<body style="background-image: url(img/pic1.png);">
+    
+    <div class="transparent">
+  <div class="container">
+    <div class="button-container">
+        <p><h2><b><u>Please Select One</u></b></h2></p>
+    <button class="signup-button" id="customer-btn">Customer</button>
+    <button class="signup-button" id="employee-btn">Employee</button>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

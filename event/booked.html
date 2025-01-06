@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.emoji {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cracker {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid #5f1419; /* Green color */
+    position: relative;
+    transform: rotate(-45deg);
+    animation: cracker-animation 2s ease-in-out infinite alternate;
+}
+
+.cracker::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #f0ff00; /* Yellow color */
+    top: -70px;
+    left: -30px;
+    transform: rotate(-45deg);
+}
+
+.cracker::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: #f0ff00; /* Yellow color */
+    top: -50px;
+    left: -30px;
+    transform: rotate(-45deg);
+}
+
+.message {
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666666;
+    font-size: 18px;
+}
+
+/* Animation */
+@keyframes cracker-animation {
+    0% { transform: rotate(-45deg); }
+    100% { transform: rotate(-40deg); }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="crackers">
+            <div class="cracker"></div>
+            <div class="cracker"></div>
+            <div class="cracker"></div>
+        </div>
+        <div class="message">
+            <h1>Thank you for booking<div class="emoji">&#128522;</div><h1>
+            <p>We will inform you shortly.</p>
+            <a href="main.html">Sign Out</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Style for the image */
+.image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container .overlay-text {
+    position: absolute;
+    
+    left: 50%;
+    bottom: 60%;
+    transform: translate(-50%, -50%);
+    color: white; /* Change text color */
+    font-size: 24px; /* Change font size */
+    font-family: Brush Script MT, Brush Script Std, cursive; text-align:center; font-size:52px; color:white;
+    text-align: center;
+}

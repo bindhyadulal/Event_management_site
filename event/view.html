@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Booked Events</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 10px;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+    .transparent {
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgb(65, 36, 36);
+        text-align: center;
+        padding-top: 90px;
+        padding-left: 90px;
+        padding-right: 200px;
+    }
+    .image-container {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+            }
+    
+            /* Style for the image */
+            .image-container img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .image-container .overlay-text {
+                position: absolute;
+                
+                left: 50%;
+                bottom: 60%;
+                transform: translate(-50%, -50%);
+                color: white; /* Change text color */
+                font-size: 24px; /* Change font size */
+                font-family: Brush Script MT, Brush Script Std, cursive; text-align:center; font-size:52px; color:white;
+                text-align: center;
+            }
+    </style>
+</head>
+<body style="background-image: url(img/bar6.png);">
+    <div class="transparent">
+        <div class="container">
+            <h1>View Booked Events</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Customer_Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Additional Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marriage</td>
+                        <td>Hari Magar</td>
+                        <td>2024-02-12</td>
+                        <td>1:00 PM</td>
+                        <td>Wedding Marquee</td>
+                        <td>Please make food less spicy</td>
+                    </tr>
+                    <tr>
+                        <td>Marriage</td>
+                        <td>Shyam Magar</td>
+                        <td>2024-02-14/td>
+                        <td>1:00 PM</td>
+                        <td>Wedding Marquee</td>
+                        <td>Please use natural flowers</td>
+                    </tr>
+                    <tr>
+                        <td>Co-operative Meeting</td>
+                        <td>Ram Krishna</td>
+                        <td>2024-02-15</td>
+                        <td>02:00 PM</td>
+                        <td>Meeting Room 1</td>
+                    </tr>
+                    <tr>
+                        <td>Marriage</td>
+                        <td>Geeta Poudel</td>
+                        <td>2024-02-12</td>
+                        <td>10:00 AM</td>
+                        <td>Party Marquee</td>
+                    </tr>
+                    <tr>
+                        <td>Gathering</td>
+                        <td>Angel Shrestha</td>
+                        <td>2024-02-12</td>
+                        <td>10:00 AM</td>
+                        <td>Conference Hall</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="image-container">
+    <footer><a href="admin1.html">Back to Dashboard</a></footer></div>
+</body>
+</html>

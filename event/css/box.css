@@ -1,0 +1,15 @@
+.box {
+    width: 200px;
+    height: 25px;
+    background-color: #411818;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(7, 6, 6, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box p {
+    color: #fff;
+    text-align: center;
+}
