@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/box.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        /* Style for the image */
+        .image-container img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-container .overlay-text {
+            position: absolute;
+            left: 50%;
+            bottom: 20%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 54px;
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            text-align: center;
+        }
+
+        /* Hover effect specifically for the small images */
+        .small-image-container img:hover {
+            transform: scale(1.1); /* Increase size of image on hover */
+        }
+    </style>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo1.png" alt="Logo" height="50px" width="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="venue.html">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bar.html">Catering/bar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Register/Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="image-container">
+        <img src="img/bar1.png" width="100%">
+        <div class="overlay-text">Catering & Bar</div>
+    </div><br/><br>
+    <table width="100%">
+        <tr>
+            <td>
+                <img src="img/bar9.png" height="300px" width="550px">
+            </td>
+            <td style="background-color:grey; border-radius: 15px;">
+                <p><h4>CATERING AND BAR</h4>
+                    Delectable food, created by passionate food masters, stunningly presented to visually entice with amazing aromas and delivered by expert servers. Whether it's canapés, bowl feed, vegetarian or vegan, buffets, barbecues or afternoon tea, street food, themed or fine dining, we’ve got you catered for.
+
+                    Fabulous bars, with top mixologists with a flair for making a show and delivering the finest cocktails, wines, beers or other drinks we will give your party a shake that will get the crowd in the mood for fun.
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <div>
+        <table width="100%">
+            <tr>
+                <td class="small-image-container">
+                    <img src="img/bar3.png">
+                    <div class="box">
+                        <p style="font-size:16px; text-align:center"><b>Buffets</b></p>
+                    </div>
+                </td>
+                <td class="small-image-container">
+                    <img src="img/bar4.png">
+                    <div class="box">
+                        <p style="font-size:16px; text-align:center"><b>Themed Dining</b></p>
+                    </div>
+                </td>
+                <td class="small-image-container">
+                    <img src="img/bar5.png">
+                    <div class="box">
+                        <p style="font-size:16px; text-align:center"><b>BBQ</b></p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="small-image-container">
+                    <img src="img/bar6.png">
+                    <div class="box">
+                        <p style="font-size:16px; text-align:center"><b>Vegetarian Table</b></p>
+                    </div>
+                </td>
+                <td class="small-image-container">
+                    <img src="img/bar7.png">
+                    <div class="box">
+                        <p style="font-size:16px; text-align:center"><b>Afternoon Tea</b></p>
+                    </div>
+                </td>
+                <td class="small-image-container">
+                    <img src="img/bar8.png">
+                    <div class="box">
+                        <p style="font-size:16px; text-align:center"><b>Fine Dining</b></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

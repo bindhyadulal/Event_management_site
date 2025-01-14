@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bc4258;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+.btn:hover {
+    background-color: #266223;
+}
+
+    </style>
+</head>
+<body style="background-image: url(img/home4.png);">
+    <div class="container">
+        <h1>Event Booking</h1>
+        <form  action="booked.html"id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required><br>
+            <label for="type">Type of Events:</label>
+            <select style="width:325px;height:35px;">
+                <option>Marriage</option>
+                <option>Bartabanda</option>
+                <option>Gathering</option>
+                <option>Co-operative Events</option>
+            </select>
+            <label for="venue">Marquee/Venue:</label>
+            <select style="width:325px;height:35px;">
+                <option>Party Marquee</option>
+                <option>Stretch Marquee</option>
+                <option>Wedding Marquee</option>
+                <option>Themed Marquee</option>
+                <option>House-Extension Marquee</option>
+                <option>Clear-roof Marquee</option>
+            </select>
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required><br>
+            <label for="eventtime">Event Time:</label>
+            <input type="time" id="eventtime" name="eventtime" required><br>
+            <label for="customize">Any Additional information:</label>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br/>
+            <a href="booked.html" class="btn">Book Event</a>
+        </form>
+    </div>
+
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

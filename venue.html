@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Venue</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/box.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <style>
+        .table{
+            padding-right: 10px;
+        }
+        .image-container {
+            position: relative;
+            display: inline-block;
+            width:100%;
+        }
+
+        /* Style for the image */
+        .image-container img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-container .overlay-text {
+            position: absolute;
+            left: 50%;
+            bottom: 20%;
+            transform: translate(-50%, -50%);
+            color: white; /* Change text color */
+            font-size: 54px; /* Change font size */
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            text-align: center;
+        }
+
+        /* Hover effect for small images */
+        .small-image-container img:hover {
+            transform: scale(1.1); /* Increase size of image on hover */
+        }
+
+    </style>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo1.png" alt="Logo" height="50px" width="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="venue.html">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bar.html">Catering/bar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Register/Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="image-container">
+        <img src="img/venue1.png" width="100%">
+        <div class="overlay-text">Party Venue</div>
+    </div><br/><br>
+    <table width="100%">
+        <tr style="padding: 10px;">
+            <td>
+                <img src="img/venue2.png" height="300px" width="550px">
+            </td>
+            <td style="background-color:grey; border-radius: 20px;">
+                <p><h4>BUILD YOUR OWN PARTY VENUE</h4>
+
+                    We work with the best marquee companies which provide the expertise and equipment to build an ideal structure with minimum 
+                    fuss for an impactful and inspired on-site venue,whether your celebrating a private party,wedding 
+                    or corporate event.</p>
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <p style="font-family:Brush Script MT, Brush Script Std, cursive; text-align:center; font-size:42px; color:blueviolet">Our Services</p>
+    <p style="font-family:Cambria; text-align:center; font-size:16px" ><b>MARQUEES</b></p><br/>
+    
+    <div>
+        <table width="100%">
+            <tr>
+                <td class="small-image-container">
+                    <img src="img/venue3.png"><br/>
+                    <div class="box">
+                        <p style="font-size:16px; text-align:center"><b>Party Marquee</b></p>
+                    </div>
+                </td>
+                <td class="small-image-container">
+                    <img src="img/venue4.png"><br>
+                    <div class="box">
+                        <p style="font-size:16px; text-align:center"><b>Stretch Marquee</b></p>
+                    </div>
+                </td>
+                <td class="small-image-container">
+                    <img src="img/venue5.png"><br>
+                    <div class="box">
+                        <p style="font-size:16px; text-align:center"><b>Wedding Marquee</b></p>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+            <td class="small-image-container">
+                <img src="img/venue6.png"><br>
+                <div class="box">
+                    <p style="font-size:16px; text-align:center"><b>Themed Marquee</b></p>
+                </div>
+            </td>
+            <td class="small-image-container">
+                <img src="img/venue7.png"><br>
+                <div class="box">
+                    <p style="font-size:16px; text-align:center"><b>House-Extension Marquee</b></p>
+                </div>
+            </td>
+            <td class="small-image-container">
+                <img src="img/venue8.png"><br>
+                <div class="box">
+                    <p style="font-size:16px; text-align:center"><b>Clear Roof Marquee</b></p>
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
