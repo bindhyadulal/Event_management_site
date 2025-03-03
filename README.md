@@ -2,6 +2,8 @@
 
 A feature-rich **event management platform** built with **HTML, CSS, JavaScript, PHP, and MySQL**. Users can explore events, register, and book tickets seamlessly.  
 
+🔗 **Live Demo:** [Event Management Site](https://bindhyadulal.github.io/Event_management_site/)  
+
 ## 🔹 Features  
 - 📅 **Event Listing** – Browse and discover upcoming events.  
 - 👥 **User Registration** – Secure sign-up and login system.  
@@ -14,3 +16,4 @@ A feature-rich **event management platform** built with **HTML, CSS, JavaScript,
 - **Backend:** PHP, MySQL  
 
 💡 Open for contributions and improvements!  
+
